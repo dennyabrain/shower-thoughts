@@ -1,0 +1,20 @@
+{
+  "name":"shower-thoughts",
+  "description":"use this when you want to share your brief ideas away from twitter.",
+  "version":"0.0.1",
+  "author":{
+    "name":"Denny George",
+    "email":"denny.george90@gmail.com",
+    "url":"dennymades.space"
+  },
+  "config":{
+    "posts_per_page":10
+  },
+  "gpm":{
+    "type":"theme",
+    "categories":[
+      "Minimal",
+      "Personal Blogs"
+    ]
+  }
+}

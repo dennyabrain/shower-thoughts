@@ -1,0 +1,10 @@
+{{!< default}}
+
+<div class="f1 helvetica fw9 center measure-wide pv5">blog name : {{@blog.title}}</div>
+<div class="f2 helvetica">blog description : {{@blog.description}}</div>
+
+{{#foreach posts}}
+  <ul class="f3 courier list pl0">
+    <a href={{url}}><li>{{title}}</li></a>
+  </ul>
+{{/foreach}}
