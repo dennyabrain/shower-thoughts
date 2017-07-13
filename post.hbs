@@ -1,10 +1,20 @@
 {{!< default}}
 {{#post}}
-  <div>
-    <h2 class="f1 bodoni">{{title}}</h2>
-    <section class="{{post_class}} measure-narrow lh-copy f3">
+  <div class="">
+    <h2 class="f1 tc courier">{{title}}</h2>
+    <section class="{{post_class}} mw7 center courier measure lh-copy f3 nested-img nested-h5 vh-50">
       {{content}}
     </section>
-    <div class="f3"> {{date published_at format="MMMM DD, YYYY"}} </div>
+    <!-- <div class="f3"> {{date published_at format="MMMM DD, YYYY"}} </div> -->
+
+    <div class="mw8 center">
+      {{#prev_post}}
+        <a class="f4 hover-light-red no-underline fl" href="{{url}}"> prev </a>
+      {{/prev_post}}
+
+      {{#next_post}}
+        <a class="f4 hover-light-red no-underline fr" href="{{url}}"> next </a>
+      {{/next_post}}
+    </div>
   </div>
 {{/post}}
