@@ -1,4 +1,16 @@
 {{!< default}}
+{{#get "tags" limit="edition1"  include="count.posts" order="count.posts desc"}}
+    <ul>
+      {{#foreach tags}}
+          <li><a href="/tag/{{slug}}">{{name}}</a>: {{count.posts}}</li>
+      {{/foreach}}
+    </ul>
+{{/get}}
+
+{{#get "posts" limit="all" include="count.posts"}}
+  <h1>{{count.posts}}</h1>
+{{/get}}
+
 {{#post}}
   <div class="">
     <h2 class="f1 tc courier">{{title}}</h2>
